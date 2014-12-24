@@ -22,7 +22,6 @@
     <background>background\bck_maze3</background>
   </backgrounds>
   <paths name="paths"/>
-  <shaders name="shaders"/>
   <objects name="objects">
     <object>objects\obj_maze1</object>
     <object>objects\obj_char1</object>

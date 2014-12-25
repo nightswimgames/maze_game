@@ -104,7 +104,8 @@ alarm[0] = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if level_win == 1
+            <string>
+if level_win == 1
 {
     if keyboard_check_pressed(vk_enter)
     {

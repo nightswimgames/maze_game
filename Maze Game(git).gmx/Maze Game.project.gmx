@@ -15,7 +15,6 @@
     <sprite>sprites\spr_mainm_quit</sprite>
     <sprite>sprites\spr_maze3</sprite>
     <sprite>sprites\spr_tgl_fullscreen</sprite>
-    <sprite>sprites\sprite8</sprite>
     <sprites name="Tutorial Levels">
       <sprite>sprites\spr_tut_1_walls</sprite>
       <sprite>sprites\spr_tut_1_howtoplay</sprite>

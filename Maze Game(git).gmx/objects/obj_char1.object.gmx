@@ -94,20 +94,15 @@ if level_win == 1
 {
 speed = 0;
 }
-// spark effect while accelerating
+// hazard detection
+
+
 if ismoving == true
 {
 effect_create_below(ef_spark,x,y,0,c_ltgray)
 }
-// simplified ismoving
-if spd &gt; 0
-    {
-    ismoving = true;
-    }
-else
-    {
-    ismoving = false;
-    }
+
+
 
 </string>
           </argument>
@@ -134,7 +129,6 @@ else
             <string>if spd &gt; 10
 {
 gamelost = true;
-move_bounce_all(false)
 }
 </string>
           </argument>
@@ -211,9 +205,10 @@ health = 100000
 direction = 90;
 speed -= .15;
 image_index = 3;
-if speed &lt;= -40
+ismoving = true;
+if vspeed &lt;= -40
 {
-speed = -40;
+vspeed = -40;
 }
 if speed &gt; -3.5
 {
@@ -245,9 +240,10 @@ speed -= .3;
     direction = 180;
     speed -= .15;
     image_index = 2;
-    if speed &lt;= -40
+    ismoving = true;
+    if hspeed &lt;= -40
     {
-    speed = -40;
+    hspeed = -40;
     }
     if speed &gt; -3.5 
     {
@@ -279,9 +275,10 @@ speed -= .3;
 direction = 90;
 speed += .15;
 image_index = 1;
-if speed &gt;= 40
+ismoving = true;
+if vspeed &gt;= 40
 {
-speed = 40;
+vspeed = 40;
 }
 if speed &lt; 3.5
 {
@@ -313,9 +310,10 @@ speed += .3;
     direction = 180;
     speed += .15;
     image_index = 0;
-    if speed &gt;= 40
+    ismoving = true;
+    if hspeed &gt;= 40
     {
-    speed = 40;
+    hspeed = 40;
     }
     if speed &lt; 3.5
     {

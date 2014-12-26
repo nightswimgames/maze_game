@@ -52,7 +52,7 @@ gamelost = false;
 globalvar level_win;
 level_win = 0;
 globalvar revnum;
-revnum = "0.0.6"
+revnum = "0.0.8"
 globalvar timedlevel;
 timedlevel = false;
 </string>

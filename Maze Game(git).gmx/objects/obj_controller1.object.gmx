@@ -47,12 +47,16 @@
             <kind>1</kind>
             <string>health = 100;
 alarm[0] = 5;
+// for multiple "levels" within one room area can be used to switch between
+// see step event of obj_tut
+globalvar area;
+area = 0;
 globalvar gamelost;
 gamelost = false;
 globalvar level_win;
 level_win = 0;
 globalvar revnum;
-revnum = "0.0.8"
+revnum = "0.1"
 globalvar timedlevel;
 timedlevel = false;
 </string>

@@ -17,14 +17,16 @@
     <sprite>sprites\spr_tgl_fullscreen</sprite>
     <sprites name="Tutorial Levels">
       <sprite>sprites\spr_tut_1_walls</sprite>
+      <sprite>sprites\spr_tut</sprite>
       <sprite>sprites\spr_tut_1_howtoplay</sprite>
       <sprite>sprites\spr_tut_2_walls</sprite>
     </sprites>
+    <sprite>sprites\spr_coin</sprite>
+    <sprite>sprites\spr_wincoin</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tutorial Levels">
-      <background>background\bck_tut_1_floor</background>
-      <background>background\bck_tut_2_floor</background>
+      <background>background\bck_dirt</background>
     </backgrounds>
     <background>background\bck_back1</background>
     <background>background\bck_maze2</background>
@@ -37,29 +39,27 @@
   </scripts>
   <objects name="objects">
     <objects name="Tutorial levels">
-      <object>objects\obj_tut_1_walls</object>
-      <object>objects\obj_tut_2_walls</object>
+      <object>objects\obj_tut</object>
       <object>objects\obj_tut_1_howtoplay</object>
-      <object>objects\obj_tut_2_howtoplay</object>
     </objects>
     <object>objects\obj_maze1</object>
     <object>objects\obj_char1</object>
     <object>objects\obj_controller1</object>
-    <object>objects\obj_WinTrigger</object>
     <object>objects\obj_maze2</object>
     <object>objects\obj_mainm_play</object>
     <object>objects\obj_mainm_quit</object>
     <object>objects\obj_maze3</object>
     <object>objects\obj_toggle_fullscreen</object>
     <object>objects\obj_slowhazard</object>
+    <object>objects\obj_coin</object>
+    <object>objects\obj_wincoin</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Main Menu">
       <room>rooms\rm_Menu_Main</room>
     </rooms>
     <rooms name="Tutorial levels">
-      <room>rooms\rm_tut_1</room>
-      <room>rooms\rm_tut_2</room>
+      <room>rooms\rm_tut</room>
     </rooms>
     <room>rooms\rm_maze1</room>
     <room>rooms\rm_wave2</room>

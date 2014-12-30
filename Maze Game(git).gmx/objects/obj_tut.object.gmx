@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(50,50,obj_tut_1_howtoplay);
+            <string>instance_create(-1,-1,obj_tut_1_howtoplay);
 nomove = true;
 areaswitch = true;
 </string>
